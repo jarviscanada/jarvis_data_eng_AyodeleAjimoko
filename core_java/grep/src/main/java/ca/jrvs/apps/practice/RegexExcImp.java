@@ -2,7 +2,7 @@ package main.java.ca.jrvs.apps.practice;
 import java.util.regex.*;
 
 
-public class RegexExcImp implements main.java.ca.jrvs.apps.practice.RegexExc {
+public class RegexExcImp implements RegexExc {
 
   public boolean matchJpeg(String filename) {
     // Regular expression to match filenames ending with ".jpg" or ".jpeg" (case-insensitive)
