@@ -152,8 +152,6 @@ public class JavaGrepImp implements JavaGrep{
       throw new IllegalArgumentException("USAGE: JavaGrep regex rootPath outFile");
     }
 
-    //BasicConfigurator.configure();
-
     //JavaGrepImp javaGrepImp = new JavaGrepImp(".*Romeo.*Juliet.*","/home/centos/dev/jarvis_data_eng_Ayodele/core_java/grep/data/txt","/home/centos/dev/jarvis_data_eng_Ayodele/core_java/grep/out/output.txt");
     JavaGrepImp javaGrepImp = new JavaGrepImp();
     javaGrepImp.setRegex(args[0]);
