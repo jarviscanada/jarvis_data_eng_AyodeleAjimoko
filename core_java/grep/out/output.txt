@@ -1,3 +1,4 @@
-   * @throws IllegalArgumentException if a givne input file is not a file
-      throw new IllegalArgumentException("The given input is not a file");
-      throw new IllegalArgumentException("USAGE: JavaGrep regex rootPath outFile");
+    Is father, mother, Tybalt, Romeo, Juliet,
+Enter Romeo and Juliet aloft, at the Window.
+    And Romeo dead; and Juliet, dead before,
+    Romeo, there dead, was husband to that Juliet;
