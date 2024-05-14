@@ -1,6 +1,6 @@
 package main.java.ca.jrvs.apps.grep;
-import com.sun.org.slf4j.internal.Logger;
-import com.sun.org.slf4j.internal.LoggerFactory;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
@@ -17,9 +17,11 @@ import java.io.OutputStreamWriter;
 import java.io.BufferedWriter;
 import java.nio.file.Paths;
 
+
+
 public class JavaGrepImp implements JavaGrep{
 
-  final Logger logger = LoggerFactory.getLogger(JavaGrep.class);
+  final Logger logger = LoggerFactory.getLogger(JavaGrepImp.class);
   private String regex;
   private String rootPath;
   private String outFile;
@@ -151,8 +153,6 @@ public class JavaGrepImp implements JavaGrep{
     if (args.length != 3) {
       throw new IllegalArgumentException("USAGE: JavaGrep regex rootPath outFile");
     }
-
-    //BasicConfigurator.configure();
 
     //JavaGrepImp javaGrepImp = new JavaGrepImp(".*Romeo.*Juliet.*","/home/centos/dev/jarvis_data_eng_Ayodele/core_java/grep/data/txt","/home/centos/dev/jarvis_data_eng_Ayodele/core_java/grep/out/output.txt");
     JavaGrepImp javaGrepImp = new JavaGrepImp();
