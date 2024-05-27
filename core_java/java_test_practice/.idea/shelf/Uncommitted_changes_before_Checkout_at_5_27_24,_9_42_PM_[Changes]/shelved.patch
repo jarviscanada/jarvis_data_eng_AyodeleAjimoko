@@ -1,0 +1,33 @@
+Index: .gitignore
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>target/\n!.mvn/wrapper/maven-wrapper.jar\n!**/src/main/**/target/\n!**/src/test/**/target/\n\n### IntelliJ IDEA ###\n.idea/modules.xml\n.idea/jarRepositories.xml\n.idea/compiler.xml\n.idea/libraries/\n*.iws\n*.iml\n*.ipr\n\n### Eclipse ###\n.apt_generated\n.classpath\n.factorypath\n.project\n.settings\n.springBeans\n.sts4-cache\n\n### NetBeans ###\n/nbproject/private/\n/nbbuild/\n/dist/\n/nbdist/\n/.nb-gradle/\nbuild/\n!**/src/main/**/build/\n!**/src/test/**/build/\n\n### VS Code ###\n.vscode/\n\n### Mac OS ###\n.DS_Store
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.gitignore b/.gitignore
+--- a/.gitignore	(revision 4878afdf7b28e453a7351a5c607b62f8870761d4)
++++ b/.gitignore	(date 1716846144655)
+@@ -8,10 +8,22 @@
+ .idea/jarRepositories.xml
+ .idea/compiler.xml
+ .idea/libraries/
++.idea/checkstyle-idea.xml
++.idea/vcs.xml
++.idea/workspace.xml
+ *.iws
+ *.iml
+ *.ipr
+ 
++## Core Java ##
++~/core_java/.idea/checkstyle-idea.xml
++core_java/.idea/vcs.xml
++core_java/.idea/workspace.xml
++core_java/core_java/.idea/checkstyle-idea.xml
++core_java/core_java/.idea/vcs.xml
++core_java/java/.idea/checkstyle-idea.xml
++core_java/java/.idea/vcs.xml
++
+ ### Eclipse ###
+ .apt_generated
+ .classpath
