@@ -45,3 +45,4 @@ public class SimpleCalculator_test {
     assertEquals(expected, actual);
   }
 }
+
