@@ -1,2 +1,6 @@
 /home/centos/dev/jarvis_data_eng_Ayodele/core_java/jdbc/src/main/java/ca/jrvs/apps/jdbc/DatabaseConnectionManager.java
+/home/centos/dev/jarvis_data_eng_Ayodele/core_java/jdbc/src/main/java/ca/jrvs/apps/jdbc/util/CustomerDAO.java
+/home/centos/dev/jarvis_data_eng_Ayodele/core_java/jdbc/src/main/java/ca/jrvs/apps/jdbc/Customer.java
+/home/centos/dev/jarvis_data_eng_Ayodele/core_java/jdbc/src/main/java/ca/jrvs/apps/jdbc/util/DataAccessObject.java
 /home/centos/dev/jarvis_data_eng_Ayodele/core_java/jdbc/src/main/java/ca/jrvs/apps/jdbc/JDBCExecutor.java
+/home/centos/dev/jarvis_data_eng_Ayodele/core_java/jdbc/src/main/java/ca/jrvs/apps/jdbc/util/DataTransferObject.java

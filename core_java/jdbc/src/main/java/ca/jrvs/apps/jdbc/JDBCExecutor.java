@@ -16,8 +16,32 @@ public class JDBCExecutor {
     try {
       Connection connection = dcm.getConnection();
       CustomerDAO customerDAO = new CustomerDAO(connection);
-      Customer customer = customerDAO.findById(1000);
-      System.out.println(customer.getFirstName() + " " + customer.getLastName());
+      Customer customer  = new Customer();
+      // Delete
+      customer.setFirstName("John");
+      customer.setLastName("Adams");
+      customer.setEmail("johnadams.wh.gov");
+      customer.setPhone("(898) 567-6563");
+      customer.setAddress("14564 Ader St");
+      customer.setCity("Vallory");
+      customer.setState("MA");
+      customer.setZipCode("U87 YU9");
+
+      Customer dbCustomer = customerDAO.create(customer);
+      System.out.println(dbCustomer);
+      dbCustomer = customerDAO.findById(dbCustomer.getId());
+      System.out.println(dbCustomer);
+      dbCustomer.setEmail("johnadams@wh.gov.com");
+      dbCustomer = customerDAO.update(dbCustomer);
+      System.out.println(dbCustomer);
+      customerDAO.delete(dbCustomer.getId());
+    /* UPDATE
+      Customer customer = customerDAO.findById(10000);
+      System.out.println(customer.getFirstName() + " " + customer.getLastName() + " " + customer.getEmail());
+      customer.setEmail("gwashingon@gmail.gov");
+      customer = customerDAO.update(customer);
+      System.out.println(customer.getFirstName() + " " + customer.getLastName() + " " + customer.getEmail());
+       */
       /*
       customer.setFirstName("George");
       customer.setLastName("Washington");
@@ -31,6 +55,7 @@ public class JDBCExecutor {
       customerDAO.create(customer);
 
        */
+
     } catch (SQLException e) {
       e.printStackTrace();
     }

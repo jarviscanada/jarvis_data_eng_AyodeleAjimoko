@@ -112,4 +112,19 @@ public class Customer implements DataTransferObject {
       }
     }
   }
+
+  @Override
+  public String toString() {
+    return "Customer{" +
+        "id=" + id +
+        ", firstName='" + firstName + '\'' +
+        ", lastName='" + lastName + '\'' +
+        ", email='" + email + '\'' +
+        ", phone='" + phone + '\'' +
+        ", address='" + address + '\'' +
+        ", city='" + city + '\'' +
+        ", state='" + state + '\'' +
+        ", zipCode='" + zipCode + '\'' +
+        '}';
+  }
 }

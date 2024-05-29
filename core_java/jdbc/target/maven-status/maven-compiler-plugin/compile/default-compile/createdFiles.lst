@@ -1,2 +1,8 @@
-main/java/ca/jrvs/apps/jdbc/JDBCExecutor.class
-main/java/ca/jrvs/apps/jdbc/DatabaseConnectionManager.class
+ca/jrvs/apps/jdbc/Customer.class
+ca/jrvs/apps/jdbc/JDBCExecutor.class
+ca/jrvs/apps/jdbc/util/CustomerDAO.class
+ca/jrvs/apps/jdbc/util/DataTransferObject.class
+ca/jrvs/apps/jdbc/util/DataAccessObject.class
+ca/jrvs/apps/jdbc/DatabaseConnectionManager$JDBCExecutor.class
+ca/jrvs/apps/jdbc/Customer$JDBCExecutor.class
+ca/jrvs/apps/jdbc/DatabaseConnectionManager.class
