@@ -1,0 +1,15 @@
+Index: src/test/java/SimpleCalculator_test.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>\nimport static org.junit.jupiter.api.Assertions.assertEquals;\nimport org.example.SimpleCalculator;\nimport org.example.SimpleCalculatorImpl;\nimport org.junit.jupiter.api.Test;\nimport org.junit.jupiter.api.BeforeEach;\nimport org.junit.jupiter.api.AfterEach;\nimport org.junit.jupiter.api.Assertions;\n\n\npublic class SimpleCalculator_test {\n  SimpleCalculator calculator;\n\n  @BeforeEach\n  void init() {\n    calculator = new SimpleCalculatorImpl();\n  }\n\n  @Test\n  public void test_add() {\n    int expected = 2;\n    int actual = calculator.add(1, 1);\n    assertEquals(expected, actual);\n  }\n\n  @Test\n  public void test_subtract() {\n    int expected = 1;\n    int actual = calculator.subtract(3,2);\n    assertEquals(expected, actual);\n  }\n\n  @Test\n  public void test_multiply() {\n    int expected = 6;\n    int actual = calculator.multiply(3,2);\n    assertEquals(expected, actual);\n  }\n\n  @Test\n  public void test_divide() {\n    //write your test here\n    int expected = 2;\n    int actual = (int) calculator.divide(6,3);\n    assertEquals(expected, actual);\n  }\n}\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/test/java/SimpleCalculator_test.java b/src/test/java/SimpleCalculator_test.java
+--- a/src/test/java/SimpleCalculator_test.java	(revision 67b9cbb8d5db07f5a2493eea4c002aa07f3e6879)
++++ b/src/test/java/SimpleCalculator_test.java	(date 1716843560839)
+@@ -45,3 +45,4 @@
+     assertEquals(expected, actual);
+   }
+ }
++
